@@ -74,43 +74,136 @@ class SolrInputDocument {
 	 */
 	public function clear() {
 	}
+	/**
+	 * Creates a copy of a SolrDocument
+	 * 
+	 * @return SolrInputDocument
+	 */
 	public function __clone() {
 	}
+	/**
+	 * Constructor
+	 * 
+	 * @return void
+	 */
 	public function __construct() {
 	}
+	/**
+	 * Removes a field from the document
+	 * 
+	 * @param string $fieldName The name of the field.
+	 * 
+	 * @return boolean TRUE on success or FALSE on failure. 
+	 */
 	public function deleteField($fieldName) {
 	}
+	/**
+	 * Destrutor
+	 * 
+	 * @return void
+	 */
 	public function __destruct() {
 	}
+	/**
+	 * Checks if a field exists
+	 * 
+	 * @param string $fieldName The name of the field.
+	 * 
+	 * @return boolean TRUE on success or FALSE on failure.
+	 */
 	public function fieldExists($fieldName) {
 	}
+	/**
+	 * Retrieves the current boost value for the document
+	 * 
+	 * @return mixed the boost value on success and FALSE on failure. 
+	 */
 	public function getBoost() {
 	}
 
 	/**
 	 * Retrieves a field by name
 	 *
-	 * @param string $fieldName
-	 * @return SolrDocumentField
+	 * @param string $fieldName The name of the field.
+	 * 
+	 * @return SolrDocumentField|boolean FALSE on failure. 
 	 */
 	public function getField($fieldName) {
 	}
+	/**
+	 * Retrieves the boost value for a particular field
+	 * 
+	 * @param string $fieldName The name of the field.
+	 * 
+	 * @return mixed the boost value for the field or FALSE if there was an error. 
+	 */
 	public function getFieldBoost($fieldName) {
 	}
+	/**
+	 * Get the number of fields in the document
+	 * 
+	 * @return integer
+	 */
 	public function getFieldCount() {
 	}
+	/**
+	 * Get an array containing all the fields in the document
+	 * 
+	 * @return SolrDocumentField[]|boolean FALSE on failure. 
+	 */
 	public function getFieldNames() {
 	}
-	public function merge(SolrInputDocument &$sourceDoc,  $overwrite) {
+	/**
+	 * Merges one input document into another
+	 * 
+	 * @param SolrInputDocument &$sourceDoc The source document. 
+	 * @param boolean           $overwrite  If this is TRUE it will replace matching fields in the destination document.
+	 * 
+	 * @return boolean TRUE on success or FALSE on failure. In the future, this will be modified to return the number of fields in the new document. 
+	 */
+	public function merge(SolrInputDocument &$sourceDoc,  $overwrite = true) {
 	}
+	/**
+	 * This is an alias of SolrInputDocument::clear
+	 * 
+	 * @return boolean TRUE on success or FALSE on failure. 
+	 */
 	public function reset() {
 	}
+	/**
+	 * Sets the boost value for this document
+	 * 
+	 * @param float $documentBoostValue The index-time boost value for this document. 
+	 * 
+	 * @return boolean TRUE on success or FALSE on failure.
+	 */
 	public function setBoost($documentBoostValue) {
 	}
+	/**
+	 * Sets the index-time boost value for a field
+	 * 
+	 * @param string $fieldName       The name of the field.
+	 * @param float  $fieldBoostValue The index time boost value.
+	 * 
+	 * @return void
+	 */
 	public function setFieldBoost($fieldName, $fieldBoostValue) {
 	}
-	public function sort(int $sortOrderBy, $sortDirection) {
+	/**
+	 * Sorts the fields within the document
+	 * 
+	 * @param integer $sortOrderBy   The sort criteria 
+	 * @param integer $sortDirection The sort direction
+	 * 
+	 * @return boolean TRUE on success or FALSE on failure. 
+	 */
+	public function sort($sortOrderBy, $sortDirection) {
 	}
+	/**
+	 * Get an array representation of the input document
+	 * 
+	 * @return array|boolean FALSE on failure. 
+	 */
 	public function toArray() {
 	}
 }

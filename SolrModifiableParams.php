@@ -16,7 +16,7 @@
  * @package  Solr
  * @author   Johannes Skov Frandsen <localgod@heaven.dk>
  */
-class SolrModifiableParams extends  SolrParams implements Serializable {
+class SolrModifiableParams extends SolrParams implements Serializable {
 	/**
 	 * Constructor
 	 * 

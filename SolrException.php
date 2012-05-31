@@ -22,17 +22,17 @@ class SolrException extends Exception {
 	 * Source line
 	 * @var integer
 	 */
-	protected  $sourceline ;
+	protected $sourceline;
 	/**
 	 * Source file
 	 * @var string
 	 */
-	protected  $sourcefile ;
+	protected $sourcefile;
 	/**
 	 * Zif name
 	 * @var string
 	 */
-	protected  $zif_name ;
+	protected $zif_name;
 
 	/**
 	 * Get internal info

@@ -75,7 +75,7 @@ class SolrClient {
 	 *
 	 * @return void
 	 */
-	public function  __construct(array $clientOptions) {
+	public function __construct(array $clientOptions) {
 	}
 
 	/**
@@ -83,7 +83,7 @@ class SolrClient {
 	 *
 	 * @return void
 	 */
-	public function  __destruct() {
+	public function __destruct() {
 	}
 
 	/**
@@ -107,7 +107,7 @@ class SolrClient {
 	 *
 	 * @return SolrUpdateResponse
 	 */
-	public function  addDocuments(array &$docs, $allowDups, $commitWithin) {
+	public function addDocuments(array &$docs, $allowDups, $commitWithin) {
 	}
 
 
@@ -179,7 +179,7 @@ class SolrClient {
 	 *
 	 * @return array
 	 */
-	public function  getOptions() {
+	public function getOptions() {
 	}
 
 	/**
